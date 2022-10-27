@@ -29,9 +29,9 @@ int[,] CreateMatrixRndRealNum(int rows, int columns, int min, int max)
     int[,] matrix = new int[rows, columns];
     var rnd = new Random();
 
-    for (int i = 0; i < matrix.GetLength(0); i++) // 0 - rows  0 
+    for (int i = 0; i < matrix.GetLength(0); i++) // - rows
     {
-        for (int j = 0; j < matrix.GetLength(1); j++) // 1 - columns
+        for (int j = 0; j < matrix.GetLength(1); j++) // - columns
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }

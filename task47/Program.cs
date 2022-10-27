@@ -1,5 +1,7 @@
 ﻿/*
-Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+Задача 47. 
+Задайте двумерный массив размером m×n, 
+заполненный случайными вещественными числами.
 m = 3, n = 4.
 0,5 7 -2 -0,2
 1 -3,3 8 -9,9
@@ -11,9 +13,9 @@ double[,] CreateMatrixRndRealNum(int rows, int columns, int min, int max)
     double[,] matrix = new double[rows, columns];
     var rnd = new Random();
 
-    for (int i = 0; i < matrix.GetLength(0); i++) // 0 - rows - количество строк 
+    for (int i = 0; i < matrix.GetLength(0); i++) // - rows - количество строк 
     {
-        for (int j = 0; j < matrix.GetLength(1); j++) // 1 - columns - столбцы
+        for (int j = 0; j < matrix.GetLength(1); j++) // - columns - столбцы
         {
             matrix[i, j] = Convert.ToDouble(new Random().Next(-100,100))/10;
         }
