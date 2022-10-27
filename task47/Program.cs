@@ -15,7 +15,7 @@ double[,] CreateMatrixRndRealNum(int rows, int columns, int min, int max)
     {
         for (int j = 0; j < matrix.GetLength(1); j++) // 1 - columns - столбцы
         {
-            matrix[i, j] = Convert.ToDouble(new Random().Next(-10,100)) / 10;
+            matrix[i, j] = Convert.ToDouble(new Random().Next(-100,100))/10;
         }
     }
     return matrix;
